@@ -2,22 +2,32 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Word List</title>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word List</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<div class="container">
-		<h1>Word List</h1>
-		<label for="letters">Enter your letters:</label>
-		<input type="text" id="letters" maxlength="16">
-		<h2>Results:</h2>
-		<div id="results"></div>
-	</div>
-	<script src="js/words.js"></script>
-	<script src="js/script.js"></script>
+  <div class="container">
+    <h1>Anagrams</h1>
+    <h3>Wordlist:</h3>
+    <div>
+      Relaxed
+      <label class="switch">
+        <input type="checkbox" id="modeSwitch">
+        <span class="slider round"></span>
+      </label>
+      Strict
+    </div>
+    <label for="letters">Enter your letters:</label>
+    <input type="text" id="letters" maxlength="16">
+    <h2>Results:</h2>
+    <div id="results"></div>
+  </div>
+  <script src="js/lax_words.js"></script>
+  <script src="js/strict_words.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
